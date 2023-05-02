@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color:rgb(150, 79, 188);
+        }
+    </style>
+</head>
+<body>
+    <h1>html</h1>
+    <h1>css</h1>
+    <h1>js</h1>
+    <h1>react js</h1>
+    <button onclick="abc()"ondblclick="dbl()">red colour</button>
+    <button onclick="clr()">reset</button>
+    <script>
+        function abc()
+    {
+            var tag=document.getElementsByTagName("h1")
+            for(let i=0;i<tag.length;i++) {
+            tag[i].style.color="red"
+            tag[i].style.backgroundColor="aqua light"
+            }
+            tag[0].style.color="orange";
+            tag[1].style.color="white";
+            tag[2].style.color="green";
+            tag[3].style.color="red";
+            }
+            function clr()
+            {
+                location.reload()
+            }
+            function dbl()
+            {
+                document.getElementsByTagName("h1")
+                for(let i=0;i<x.length;i++){
+                x[i].style.border="2px solid green"
+                }
+            }
+    </script>
+</body>
+</html>
